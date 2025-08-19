@@ -115,76 +115,71 @@ int main() {
     scanf (" %d", &escolhajogador);
 
     //Estrutura de decisão comparando as cartas
-    printf("...Vamos ao Resultado...\n\n");
+    printf ("...Vamos ao Resultado...\n\n");
     
-    printf("1 - Disputa entre : %s X %s\n", cidade1, cidade2);
-    switch (escolhajogador) {         
-          case 1:
-          printf (" 2 - Sua escolha foi População\n");
+    printf (" 1 - Disputa entre : %s X %s\n", cidade1, cidade2);
+     switch (escolhajogador) {         
+     case 1:
+          printf (" 2 - Sua escolha foi: População\n");
           printf (" 3 - Os valores são: %lu X %lu\n", populacao1, populacao2);
           if (populacao1 == populacao2) {
-               printf (" 4 - O resultado é: Empate");
+          printf (" 4 - O resultado é: Empate");
           } else if (populacao1 > populacao2) {
-               printf (" 4 - O resultado é: *** %s venceu!", cidade1);
+          printf (" 4 - O resultado é: %s venceu!", cidade1);
           } else { 
-               printf (" 4 - O resultado é: *** %s venceu!", cidade2); 
+          printf (" 4 - O resultado é: %s venceu!", cidade2); 
           } 
-          break;
-
-          case 2:
-          printf (" 2 - Sua escolha foi Área\n");
+     break;
+     case 2:
+          printf (" 2 - Sua escolha foi: Área\n");
           printf (" 3 - Os valores são: %.2f X %.2f\n", area1, area2);
           if (area1 == area2) {
-               printf (" 4 - O resultado é: Empate");
+          printf (" 4 - O resultado é: Empate");
           } else if (area1 > area2) {
-               printf (" 4 - O resultado é: *** %s venceu!", cidade1);
+          printf (" 4 - O resultado é: %s venceu!", cidade1);
           } else { 
-               printf (" 4 - O resultado é: *** %s venceu!", cidade2); 
+          printf (" 4 - O resultado é: %s venceu!", cidade2); 
           } 
-          break;
-
-          case 3:
-          printf (" 2 - Sua escolha foi PIB\n");
+     break;
+     case 3:
+          printf (" 2 - Sua escolha foi: PIB\n");
           printf (" 3 - Os valores são: %.2f X %.2f\n", pib1, pib2);
           if (pib1 == pib2) {
-               printf (" 4 - O resultado é: Empate");
+          printf (" 4 - O resultado é: Empate");
           } else if (pib1 > pib2) {
-               printf (" 4 - O resultado é: *** %s venceu!", cidade1);
+          printf (" 4 - O resultado é: %s venceu!", cidade1);
           } else { 
-               printf (" 4 - O resultado é: *** %s venceu!", cidade2); 
+          printf (" 4 - O resultado é: %s venceu!", cidade2); 
           } 
-          break;
-
-          case 4:
-          printf (" 2 - Sua escolha foi Número de Pontos Turisticos\n");
-           printf (" 3 - Os valores são: %d X %d\n", pontostur1 , pontostur2);
+     break;
+     case 4:
+          printf (" 2 - Sua escolha foi: Número de Pontos Turisticos\n");
+          printf (" 3 - Os valores são: %d X %d\n", pontostur1 , pontostur2);
           if (pontostur1 == pontostur2) {
-               printf (" 4 - O resultado é: Empate");
+          printf (" 4 - O resultado é: Empate");
           } else if (pontostur1 > pontostur2) {
-               printf (" 4 - O resultado é: *** %s venceu!", cidade1);
+          printf (" 4 - O resultado é: %s venceu!", cidade1);
           } else { 
-               printf (" 4 - O resultado é: *** %s venceu!", cidade2); 
+          printf (" 4 - O resultado é: %s venceu!", cidade2); 
           } 
-          break;
-
-          case 5:
-          printf (" 2 - Sua escolha foi Densidade demográfica\n");
-           printf (" 3 - Os valores são: %.2f X %.2f\n", densidade1, densidade2);
+     break;
+     case 5:
+          printf (" 2 - Sua escolha foi: Densidade demográfica\n");
+          printf (" 3 - Os valores são: %.2f X %.2f\n", densidade1, densidade2);
           if (densidade1 == densidade2) {
-               printf (" 4 - O resultado é: Empate");
-          } else if (densidade1 < densidade2)
-               printf (" 4 - O resultado é: *** %s venceu!", cidade1);
+          printf (" 4 - O resultado é: Empate");
+          } else if (densidade1 == densidade2){
+          printf (" 4 - O resultado é: %s venceu!", cidade1);
           } else { 
-               printf (" 4 - O resultado é: *** %s venceu!", cidade2); 
+          printf (" 4 - O resultado é: %s venceu!", cidade2); 
           } 
-          break;
-          default:
+     break;
+     default:
           printf ("Opção invalida\n\n");
      }
 
+    printf("\n\n\nObrigado por utilizar o Super Trunfo!\n\n");
 
-    printf("\nObrigado por utilizar o Super Trunfo!\n\n");
-   
     return 0;
 }
 
